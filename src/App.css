@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  button {
+    min-height: 44px; /* Tappable area pour mobile */
+  }
+}
