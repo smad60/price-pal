@@ -63,7 +63,7 @@ export function ProductCard({ productId, onClick }: ProductCardProps) {
           {latestPrice && (
             <div className="flex items-center gap-2 mt-2">
               <span className="text-lg font-semibold">
-                {latestPrice.price.toFixed(2)} €
+                {latestPrice.price.toFixed(2)} dh
               </span>
               
               {priceChange !== 0 && (
@@ -101,7 +101,7 @@ export function ProductCard({ productId, onClick }: ProductCardProps) {
             )}
             {productPrices.length > 1 && (
               <span className="text-xs text-primary font-medium">
-                Min: {lowestPrice.toFixed(2)} €
+                Min: {lowestPrice.toFixed(2)} dh
               </span>
             )}
           </div>

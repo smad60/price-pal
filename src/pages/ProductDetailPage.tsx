@@ -173,21 +173,21 @@ export default function ProductDetailPage() {
             <div className="bg-success/10 rounded-xl p-4 text-center">
               <TrendingDown className="w-5 h-5 mx-auto text-success mb-2" />
               <span className="block text-lg font-bold text-success">
-                {lowestPrice.toFixed(2)} €
+                {lowestPrice.toFixed(2)} dh
               </span>
               <span className="text-xs text-muted-foreground">Minimum</span>
             </div>
             <div className="bg-card rounded-xl p-4 text-center shadow-soft">
               <BarChart3 className="w-5 h-5 mx-auto text-primary mb-2" />
               <span className="block text-lg font-bold">
-                {averagePrice.toFixed(2)} €
+                {averagePrice.toFixed(2)} dh
               </span>
               <span className="text-xs text-muted-foreground">Moyenne</span>
             </div>
             <div className="bg-destructive/10 rounded-xl p-4 text-center">
               <TrendingUp className="w-5 h-5 mx-auto text-destructive mb-2" />
               <span className="block text-lg font-bold text-destructive">
-                {highestPrice.toFixed(2)} €
+                {highestPrice.toFixed(2)} dh
               </span>
               <span className="text-xs text-muted-foreground">Maximum</span>
             </div>
@@ -245,7 +245,7 @@ export default function ProductDetailPage() {
                       </div>
                       <div className="text-right">
                         <p className="text-lg font-semibold">
-                          {price.price.toFixed(2)} €
+                          {price.price.toFixed(2)} dh
                         </p>
                         {priceChange !== 0 && (
                           <span

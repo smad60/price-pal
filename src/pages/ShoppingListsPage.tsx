@@ -159,7 +159,7 @@ export default function ShoppingListsPage() {
                         <h3 className="font-medium">{list.name}</h3>
                         <p className="text-sm text-muted-foreground">
                           {stats.total} article{stats.total > 1 ? 's' : ''} •{' '}
-                          {stats.estimatedCost.toFixed(2)} €
+                          {stats.estimatedCost.toFixed(2)} dh
                         </p>
                       </div>
                     </div>
