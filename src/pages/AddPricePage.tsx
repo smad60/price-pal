@@ -151,7 +151,7 @@ export default function AddPricePage() {
         <div className="bg-card rounded-2xl p-6 shadow-soft space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="price">Prix (€) *</Label>
+              <Label htmlFor="price">Prix (dh) *</Label>
               <Input
                 id="price"
                 type="number"
@@ -233,7 +233,7 @@ export default function AddPricePage() {
             <Label htmlFor="notes">Notes (optionnel)</Label>
             <Textarea
               id="notes"
-              placeholder="Ex: En promotion, prix habituel 5.99€"
+              placeholder="Ex: En promotion, prix habituel 5.99dh"
               value={formData.notes}
               onChange={(e) =>
                 setFormData({ ...formData, notes: e.target.value })

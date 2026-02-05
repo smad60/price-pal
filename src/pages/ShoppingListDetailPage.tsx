@@ -106,7 +106,7 @@ export default function ShoppingListDetailPage() {
       })
       .join('\n');
 
-    const shareText = `${list.name}\n\n${text}\n\nTotal estimé: ${totalEstimate.toFixed(2)} €`;
+    const shareText = `${list.name}\n\n${text}\n\nTotal estimé: ${totalEstimate.toFixed(2)} dh`;
 
     if (navigator.share) {
       try {
@@ -153,7 +153,7 @@ export default function ShoppingListDetailPage() {
             <div className="text-right">
               <p className="text-sm text-muted-foreground">Total estimé</p>
               <p className="text-2xl font-bold text-primary">
-                {totalEstimate.toFixed(2)} €
+                {totalEstimate.toFixed(2)} dh
               </p>
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function ShoppingListDetailPage() {
                       <div className="flex-1 min-w-0">
                         <p className="font-medium truncate">{product.name}</p>
                         <p className="text-sm text-muted-foreground">
-                          {price ? `${price.price.toFixed(2)} €` : 'Prix non défini'}
+                          {price ? `${price.price.toFixed(2)} dh` : 'Prix non défini'}
                         </p>
                       </div>
                       {isInList && (
@@ -279,9 +279,9 @@ export default function ShoppingListDetailPage() {
                       </p>
                       <p className="text-sm text-muted-foreground">
                         {price
-                          ? `${price.price.toFixed(2)} € × ${item.quantity} = ${(
+                          ? `${price.price.toFixed(2)} dh × ${item.quantity} = ${(
                               price.price * item.quantity
-                            ).toFixed(2)} €`
+                            ).toFixed(2)} dh`
                           : 'Prix non défini'}
                       </p>
                     </div>
